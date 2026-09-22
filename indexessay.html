@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Essay Keamanan Jaringan - CyberSec Essay Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Montserrat & Chakra Petch untuk kesan High-Speed & Sporty Cyber -->
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,600;0,700;1,700&family=Montserrat:ital,wght@0,700;0,900;1,800;1,900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        sport: ['"Montserrat"', 'sans-serif'],
+                        tech: ['"Chakra Petch"', 'sans-serif'],
+                    },
+                    colors: {
+                        cyber: {
+                            black: '#0b0f17',
+                            card: '#131924',
+                            orange: '#ff5500',
+                            neon: '#00ffcc',
+                            yellow: '#ccff00'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Pattern Garis Balap / Speed Lines */
+        .bg-speed-pattern {
+            background-color: #0b0f17;
+            background-image: 
+                linear-gradient(135deg, rgba(255, 85, 0, 0.05) 25%, transparent 25%), 
+                linear-gradient(225deg, rgba(255, 85, 0, 0.05) 25%, transparent 25%), 
+                linear-gradient(45deg, rgba(255, 85, 0, 0.05) 25%, transparent 25%), 
+                linear-gradient(315deg, rgba(255, 85, 0, 0.05) 25%, #0b0f17 25%);
+            background-position:  10px 0, 10px 0, 0 0, 0 0;
+            background-size: 20px 20px;
+            background-repeat: repeat;
+        }
+
+        /* Diagonal Sport Strips */
+        .racing-stripes {
+            background: repeating-linear-gradient(
+                -55deg,
+                #ff5500,
+                #ff5500 12px,
+                #131924 12px,
+                #131924 24px
+            );
+        }
+
+        /* Skew Utility */
+        .skew-box {
+            transform: skewX(-12deg);
+        }
+        .unskew-box {
+            transform: skewX(12deg);
+        }
+        
+        .glow-orange {
+            box-shadow: 0 0 25px rgba(255, 85, 0, 0.4);
+        }
+        .glow-neon {
+            box-shadow: 0 0 20px rgba(0, 255, 204, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-speed-pattern text-slate-100 font-sans antialiased min-h-screen flex flex-col relative selection:bg-cyber-orange selection:text-black">
+
+    <!-- Top Neon Accent Bar -->
+    <div class="h-1.5 w-full bg-gradient-to-r from-cyber-orange via-cyber-neon to-cyber-yellow sticky top-0 z-50"></div>
+
+    <!-- Header / Navbar Sporty -->
+    <nav class="bg-cyber-black/90 backdrop-blur-md border-b border-slate-800 sticky top-1.5 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- Logo Brand -->
+            <div class="flex items-center space-x-4">
+                <div class="h-12 w-12 bg-cyber-orange text-black flex items-center justify-center skew-box glow-orange">
+                    <!-- Icon Perisai & Petir Keamanan -->
+                    <svg class="w-7 h-7 unskew-box text-black" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-5.45 9-12V5l-9-4zm-1 16l-4-4 1.41-1.41L11 14.17l6.59-6.59L19 9l-8 8z"/>
+                    </svg>
+                </div>
+                <div class="leading-none">
+                    <span class="text-2xl font-black font-sport italic tracking-wider text-white uppercase">
+                        NETSEC <span class="text-cyber-orange">ESSAY</span>
+                    </span>
+                    <span class="block text-[10px] font-tech text-cyber-neon tracking-widest uppercase mt-1">
+                        ⚡ SECURITY ESSAY PORTAL & ANALYTICS
+                    </span>
+                </div>
+            </div>
+            
+            <!-- Status Pill -->
+            <div class="hidden md:flex items-center space-x-3 text-xs font-bold">
+                <div class="flex items-center gap-2 px-4 py-2 bg-slate-900 border-2 border-cyber-orange/40 text-white skew-box">
+                    <span class="unskew-box flex items-center gap-2 font-tech tracking-wider">
+                        <span class="w-2.5 h-2.5 bg-cyber-neon rounded-full animate-ping"></span>
+                        PORTAL ESSAY AKTIF
+                    </span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner Hero Section Sporty -->
+    <header class="relative pt-12 pb-20 lg:pt-20 lg:pb-24 overflow-hidden bg-gradient-to-b from-slate-950 via-cyber-black to-cyber-black border-b border-slate-800">
+        <!-- Racing Stripe Graphic Element -->
+        <div class="absolute top-0 right-0 w-1/3 h-full racing-stripes opacity-20 skew-box translate-x-20 -z-0"></div>
+        <div class="absolute -bottom-10 -left-10 w-72 h-72 bg-cyber-orange/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <!-- Badge -->
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-cyber-orange/20 border-l-4 border-cyber-orange text-cyber-orange text-xs font-black font-tech mb-6 uppercase tracking-widest skew-box">
+                <span class="unskew-box">🛡️ PORTAL KEAMANAN JARINGAN & CYBER DEFENSE</span>
+            </div>
+
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black font-sport italic tracking-tighter mb-6 leading-none uppercase text-white">
+                PORTAL ESSAY <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyber-orange via-yellow-400 to-cyber-neon">
+                    KEAMANAN JARINGAN
+                </span>
+            </h1>
+
+            <p class="text-slate-400 text-base sm:text-lg max-w-2xl mb-8 font-medium leading-relaxed">
+                Pusat publikasi, analisis, dan penyusunan essay ilmiah seputar arsitektur keamanan jaringan, kriptografi, mitigasi serangan, hingga manajemen pertahanan siber terkini.
+            </p>
+
+            <!-- Quick Metrics / Stats -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 max-w-xl">
+                <div class="bg-cyber-card p-3 border-l-2 border-cyber-orange skew-box">
+                    <div class="unskew-box">
+                        <div class="text-2xl font-black font-sport italic text-white">12 TOPIC</div>
+                        <div class="text-[10px] font-tech text-slate-400 uppercase">Modul Essay</div>
+                    </div>
+                </div>
+                <div class="bg-cyber-card p-3 border-l-2 border-cyber-neon skew-box">
+                    <div class="unskew-box">
+                        <div class="text-2xl font-black font-sport italic text-cyber-neon">ONLINE</div>
+                        <div class="text-[10px] font-tech text-slate-400 uppercase">Akses Portal</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full">
+        <!-- Section Header -->
+        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-10 gap-4 border-b border-slate-800 pb-6">
+            <div>
+                <h2 class="text-2xl sm:text-3xl font-black font-sport italic text-white tracking-tight uppercase flex items-center gap-3">
+                    <span class="w-3 h-8 bg-cyber-orange inline-block skew-box"></span>
+                    DAFTAR ESSAY KEAMANAN JARINGAN
+                </h2>
+                <p class="text-sm font-medium text-slate-400 mt-1">Pilih judul modul essay di bawah ini untuk melihat lembar kerja & penulisan essay.</p>
+            </div>
+            
+            <div class="text-xs font-black font-tech px-4 py-2 bg-cyber-orange text-black skew-box glow-orange">
+                <span class="unskew-box">12 MODUL TERSEDIA</span>
+            </div>
+        </div>
+
+        <!-- Grid Kartu Essay -->
+        <div id="cardGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            <!-- Kartu essay akan digenerate secara otomatis oleh JavaScript -->
+        </div>
+    </main>
+
+    <!-- Footer Sporty -->
+    <footer class="bg-slate-950 border-t-2 border-slate-800 py-8 text-center text-xs font-bold text-slate-500 uppercase tracking-widest mt-auto">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col items-center gap-4">
+            <div class="flex flex-wrap justify-center gap-4 text-slate-400 font-sport italic text-sm">
+                <span class="hover:text-cyber-orange transition-colors">#CYBERSECURITY</span>
+                <span class="hover:text-cyber-neon transition-colors">#FIREWALL</span>
+                <span class="hover:text-cyber-yellow transition-colors">#NETWORKDEFENSE</span>
+                <span class="hover:text-cyber-orange transition-colors">#CRYPTOGRAPHY</span>
+            </div>
+            <p class="font-tech text-slate-500">&copy; 2026 NETSEC ESSAY PORTAL. ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
+
+    <!-- Script Pengisi Kartu Essay -->
+    <script>
+        // Target file essay keamanan jaringan
+        const essayFiles = [
+            "essay_kj_1.html",  
+            "essay_kj_2.html",  
+            "essay_kj_3.html",  
+            "essay_kj_4.html",  
+            "essay_kj_5.html",  
+            "essay_kj_6.html",  
+            "essay_kj_7.html",  
+            "essay_kj_8.html",  
+            "essay_kj_9.html",  
+            "essay_kj_10.html", 
+            "essay_kj_11.html", 
+            "essay_kj_12.html"  
+        ];
+
+        // Judul & Topik Essay Keamanan Jaringan
+        const essayTopics = [
+            "Analisis Ancaman, Kerentanan & Vektor Serangan Jaringan Modern",
+            "Arsitektur & Konfigurasi Firewall Sistem Intrusion Prevention (IPS)",
+            "Kriptografi, Protokol Enkripsi & Keamanan Jalur Komunikasi (SSL/TLS)",
+            "Keamanan Jaringan Nirkabel & Proteksi Protokol WPA3 Enterprise",
+            "Manajemen Akses, Otentikasi (AAA/RADIUS) & Multi-Factor Auth",
+            "Forensik Digital Jaringan & Analisis Log Aktivitas Mencurigakan",
+            "Penerapan Konsep Zero Trust Network Access (ZTNA) & Defense-in-Depth",
+            "Metodologi Penetration Testing & Etika Hacking Sistem Jaringan",
+            "Keamanan Infrastruktur Cloud & Arsitektur Virtual Private Network (VPN)",
+            "Strategi Mitigasi & Penanganan Serangan Distributed Denial of Service (DDoS)",
+            "Security Awareness, Human Factor & Rekayasa Sosial (Social Engineering)",
+            "Penyusunan Kebijakan Keamanan Informasi & Audit Standar ISO/IEC 27001"
+        ];
+
+        // Skema Warna Sporty per Kartu
+        const sportStyles = [
+            { accent: "bg-cyber-orange text-black", text: "text-cyber-orange", btn: "bg-cyber-orange hover:bg-white text-black", border: "border-cyber-orange" },
+            { accent: "bg-cyber-neon text-black", text: "text-cyber-neon", btn: "bg-cyber-neon hover:bg-white text-black", border: "border-cyber-neon" },
+            { accent: "bg-cyber-yellow text-black", text: "text-cyber-yellow", btn: "bg-cyber-yellow hover:bg-white text-black", border: "border-cyber-yellow" },
+            { accent: "bg-red-500 text-white", text: "text-red-400", btn: "bg-red-500 hover:bg-white text-black", border: "border-red-500" }
+        ];
+
+        const grid = document.getElementById('cardGrid');
+
+        for (let i = 1; i <= 12; i++) {
+            const card = document.createElement('div');
+            const targetFile = essayFiles[i-1];
+            const style = sportStyles[(i-1) % sportStyles.length];
+
+            card.className = `group bg-cyber-card border-b-4 ${style.border} border-t border-x border-slate-800 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between overflow-hidden relative`;
+            
+            card.innerHTML = `
+                <!-- Dynamic Corner Accent -->
+                <div class="absolute top-0 right-0 w-8 h-8 bg-slate-800/50 skew-box translate-x-4 -translate-y-4"></div>
+
+                <div class="p-6 relative z-10">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="${style.accent} px-3 py-1 skew-box font-sport font-black italic text-lg leading-none">
+                            <span class="unskew-box block">ESSAY 0${i < 10 ? '0' + i : i}</span>
+                        </div>
+                        <span class="text-[10px] font-tech font-bold text-slate-400 bg-slate-900 border border-slate-700 px-2 py-1 uppercase tracking-wider">${targetFile}</span>
+                    </div>
+
+                    <h3 class="text-lg font-black font-sport italic text-white uppercase mb-3 group-hover:${style.text} transition-colors leading-tight">
+                        Modul Essay #${i}
+                    </h3>
+
+                    <p class="text-slate-300 text-xs font-medium mb-6 line-clamp-3 leading-relaxed">
+                        ${essayTopics[i-1]}
+                    </p>
+                </div>
+                
+                <a href="${targetFile}" class="w-full py-3.5 px-6 text-xs font-black font-sport italic uppercase tracking-wider transition-all duration-300 flex items-center justify-between group/btn ${style.btn}">
+                    <span>Buka Portal Essay</span>
+                    <svg class="w-4 h-4 transform group-hover/btn:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                    </svg>
+                </a>
+            `;
+            grid.appendChild(card);
+        }
+    </script>
+</body>
+</html>
